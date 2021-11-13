@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*--------------Typography---------------*/
+
+.logo {
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Merienda", cursive;
+  background-image: url("/Images/retina_wood.png");
+  background-size: repeat;
+  color: rgba(95, 49, 18, 1);
+}
+
+/*----------Layout - Main section----------*/
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-card-container {
+  width: 60%;
+  height: 600px;
+  border: 2px rgba(95, 49, 18, 0.733) solid;
+  border-radius: 10% 5%;
+  background: rgba(165, 91, 42, 0.39);
+}
+
+header {
+  height: 70px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.main-nav-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container ul {
+  width: 300px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.nav-container li {
+  padding: 0.2em 0.8em;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+}
+.nav-container a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  margin-top: 3em;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.h1-container {
+  width: 50%;
+  margin-top: 6em;
+}
+
+h1 {
+  font-size: 3rem;
+  position: relative;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.h1-container p {
+  text-align: center;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  background: rgba(95, 49, 18, 0.5);
+  width: 80px;
+  height: 2px;
+  position: absolute;
+  left: 40%;
+  top: 1.9em;
+}
+
+.image-home {
+  width: 400px;
+}
+
+.hamburger-nav {
+  position: relative;
+}
+
+.projects-section {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(165, 91, 42, 0.39);
+  border-top: 3px rgba(95, 49, 18, 0.5) solid;
+  border-bottom: 3px rgba(95, 49, 18, 0.5) solid;
+}
+
+#projects-title,
+#about-me-title,
+#contact-title {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.about-me-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.contact-section {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(165, 91, 42, 0.39);
+  border-top: 3px rgba(95, 49, 18, 0.5) solid;
+  border-bottom: 3px rgba(95, 49, 18, 0.5) solid;
+}
+
+.contact-form-container{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 13rem auto;
+}
+
+.about-me-container {
+  width: 95%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.icon-container {
+  height: 150px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-utility {
+  width: 20%;
+}
+
+.html-logo {
+  width: 27%;
+  position: relative;
+  left: 15px;
+}
+
+.about-me-paragraph {
+  width: 20%;
+}
+
+input, textarea{
+  height: 50px;
+  width: 500px;
+  margin-bottom: 30px;
+  border:none;
+  border: 2px rgba(95, 49, 18, 0.733) solid;
+  background-color: transparent;
+  resize: none;
+  font-size: 1rem;
+  color: rgba(95, 49, 18, 0.733);
+  text-align: center;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  border:none;
+  border: 2px rgba(95, 49, 18, 0.733) solid;
+  background-color: transparent;
+  margin:0 auto;
+  font-size: 1rem;
+  color: rgba(95, 49, 18, 0.733);
+  text-align: center;
+  font-family: "Merienda", cursive;
+}
+
+::placeholder{
+  color: rgba(95, 49, 18, 0.733);
+  text-align: center;
+  font-family: "Merienda", cursive;;
+}
+
+.contact-information{
+  width: 40%;
+  text-align: center;
+  position: relative;
+}
+
+.contact-subtitle{
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+.contact-subtitle::after{
+  content: "";
+  display: block;
+  background: rgba(95, 49, 18, 0.5);
+  width: 120px;
+  height: 2px;
+  position: absolute;
+  left: 39%;
+  top: 1.9em;
+}
+/* ------------ANIMATIONS -----------*/
+.nav-container li:hover,
+.nav-container li:focus,
+.active {
+  cursor: pointer;
+  outline: 0.2em rgba(95, 49, 18, 0.733) solid;
+  transition: 50ms ease-in-out;
+}
+
+@media (max-width: 1500px) {
+  .nav-container {
+    display: none;
+  }
+  .main-nav-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hamburger-img {
+    width: 30px;
+    position: absolute;
+    right: 0%;
+  }
+
+  .h1-container {
+    margin: 3em auto;
+    text-align: center;
+  }
+
+  .h1-container h1 {
+    font-size: 1.5rem;
+  }
+  .h1-container p {
+    font-size: 0.8rem;
+  }
+
+  h1::after {
+    opacity: 0;
+  }
+}
