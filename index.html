@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vojin Popović - Web developer</title>
+    <link rel="stylesheet" href="Portfolio2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="Portfolio2.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="home-card-container">
+        <header>
+          <div class="main-nav-container">
+            <div class="logo-container">
+              <h2 class="logo">VP</h2>
+              <p class="subtitle">Vojinfinite possibilities</p>
+            </div>
+            <nav class="nav-container">
+              <ul class="navbar-ul">
+                <li class="navbar-hyperlink active"><a href="#">Home</a></li>
+                <!-- prettier-ignore -->
+                <li class="navbar-hyperlink">
+                  <a href="http://127.0.0.1:5500/Portfolio2/Portfolio2.html#projects-title">Projects</a>
+                </li>
+                <li class="navbar-hyperlink">
+                  <a
+                    href="http://127.0.0.1:5500/Portfolio2/Portfolio2.html#about-me-title"
+                    >About me</a
+                  >
+                </li>
+                <li class="navbar-hyperlink">
+                  <a
+                    href="http://127.0.0.1:5500/Portfolio2/Portfolio2.html#contact-title"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <div class="h1-container">
+            <h1>Vojin Popović</h1>
+            <p>Frontend Developer & Designer</p>
+          </div>
+          <div class="home-image-container">
+            <img class="image-home" src="/Images/selfi.png" alt="" />
+          </div>
+        </main>
+      </div>
+    </div>
+    <section class="projects-section">
+      <h2 id="projects-title">Projects</h2>
+    </section>
+    <section class="about-me-section">
+      <h2 id="about-me-title">About me</h2>
+      <div class="about-me-container">
+        <p class="about-me-paragraph">
+          Hi, i am a self thought front-end developer from Belgrade, Serbia.
+          Until i found myself in coding, i tried myself in engineering and
+          video editing, but ultimately none of that captured my interest for
+          long, and i was looking for an alternative i would enjoy doing for a
+          living. Now i try to learn more about coding every day, and get better
+          at it.
+        </p>
+        <br />
+        <div class="icon-container">
+          <!-- <div class="html-logo logo-utility"></div>
+          <div class="css-logo logo-utility"></div>
+          <div class="js-logo logo-utility"></div>
+          <div class="git-logo logo-utility"></div> -->
+
+          <img
+            class="html-logo logo-utility"
+            src="/Images/HTML5_logo.png"
+            alt=""
+          />
+          <img
+            class="css-logo logo-utility"
+            src="/Images/CSS3_logo.png"
+            alt=""
+          />
+          <img
+            class="js-logo logo-utility"
+            src="/Images/avaScript-logo.png"
+            alt=""
+          />
+          <img
+            class="git-logo logo-utility"
+            src="/Images/github-logo.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <h2 id="contact-title">Contact</h2>
+      <div class="contact-form-container">
+        <div class="contact-information">
+          <h2 class="contact-subtitle">Contact me</h2>
+          <p>Phone: +381 64/118-9886</p>
+          <p>E-mail: vojinpopovic3@gmail.com</p>
+        </div>
+        <form action="https://formsubmit.co/vojinpopovic3@gmail.com" method="POST">
+          <div>
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Name" required />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div>
+            <label for="message"></label>
+            <textarea
+              type="text"
+              id="message"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
